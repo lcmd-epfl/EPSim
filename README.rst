@@ -2,7 +2,8 @@ EPSim
 ============
 Energy Profile Similarity Maps
 
-EPsim is a python program that allows to construct the Energy Profile Similarity maps, based on a de.
+EPSim is a python program that allows computing the similarity between the Sabatier's ideal reaction energies profile for a given catalytic cycle and the energy profile of potential catalysts. The computed similarities are then locally saved and automatically plotted as a function of a chemically and physically well-defined descriptor.
+
 
 Requirements
 ------------
