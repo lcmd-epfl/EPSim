@@ -16,14 +16,16 @@ Add ``~/EPSim`` to your $PYTHONPATH environment variable.
 
 Usage:
 -----
-epsim.py -i <datafile> -f [feature columns in base 0] -r <reaction energy> -s <number of reaction steps> -d <descriptor file> -c <desc column>')
+```
+$ python epsim.py -i <datafile> -f [feature columns in base 0] -r <reaction energy> -s <number of reaction steps> -d <descriptor file> -c <desc column>')
+```
 
--i Name of the file containing the reaction energies for each catalyst.
--f List of indices corresponding to the columns that contain the reaction energy of each step of the cycle.
--r Reaction energy.
--s Number of steps in the catalystic cycle.
--d File containing the descriptor variable.
--c index of the column containing the descriptor in the descriptor file.
+-i Name of the file containing the reaction energies for each catalyst. <br>
+-f List of indices corresponding to the columns that contain the reaction energy of each step of the cycle. <br>
+-r Reaction energy. <br>
+-s Number of steps in the catalystic cycle. <br>
+-d File containing the descriptor variable. <br>
+-c index of the column containing the descriptor in the descriptor file. <br>
 
 
 
