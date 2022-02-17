@@ -1,6 +1,5 @@
 EPSim: Energy Profile Similarity Maps
 ==============================================
-[//]: # "[![DOI](https://zenodo.org/badge/381737392.svg)](https://zenodo.org/badge/latestdoi/381737392):"
 
 ![epsim logo](./images/epsim_logo.png)
 
@@ -25,36 +24,6 @@ The code runs on pure python with minimal dependencies:
 Download and add EPSim.py to your path. No strings attached. Run as:
 
 ```python
-python EPSim.py [-h] [-version] -i [FILENAMES] [-df DFILENAMES] [-nd ND] [-v VERB] [-r RUNMODE] [-lsfer | -thermo | -kinetic | -es | -tof | -all] [-T TEMP] [-pm PLOTMODE] [-ic IC] [-fc FC]
-                [-rm RMARGIN] [-lm LMARGIN] [-np NPOINTS] [-d] [-is IMPUTER_STRAT] [-refill]
-```
-
-You can also execute:
-
-```python 
-python setup.py install
-```
-
-to install EPSim as a python module. Afterwards, you can call EPSim as:
-
-```python 
-python -m EPSim [-h] [-version] -i [FILENAMES] [-df DFILENAMES] [-nd ND] [-v VERB] [-r RUNMODE] [-lsfer | -thermo | -kinetic | -es | -tof | -all] [-T TEMP] [-pm PLOTMODE] [-ic IC] [-fc FC]
-                [-rm RMARGIN] [-lm LMARGIN] [-np NPOINTS] [-d] [-is IMPUTER_STRAT] [-refill]
-```
-
-Options can be consulted using the `-h` flag in either case.
-
-## Examples [↑](#examples)
-
-The examples subdirectory contains a copious amount of tests which double as examples. Any of the data files can be run as:
-
-```python
-python EPSim.py -i [FILENAME]
-```
-
-
-
-```python
 python epsim.py -i <datafile> -f [feature columns in base 0] -r <reaction energy> -s <number of reaction steps> -d <descriptor file> -c <desc column>
 ```
 
@@ -65,11 +34,12 @@ python epsim.py -i <datafile> -f [feature columns in base 0] -r <reaction energy
 -d File containing the descriptor variable. <br>
 -c index of the column containing the descriptor in the descriptor file. <br>
 
-```python
-python  epsim.py -i ./example\_data/mydata.txt -f 1,2,3,4,5,6 -r -30.738 -s 6 -d ./example\_data/descript.dat -c 1
-```
-Regarding format, EPSim.py expects headers for all columns. The first column must contain names/identifiers. Then, EPSim.py expects a number of columns with relative free energies for the species in the catalytic cycle (in order of appearance), and a final column whose header is "Product" containing the reaction energy.
+## Examples [↑](#examples)
 
+Example input can be found in the example_data directory. Run as: 
+```python
+python  epsim.py -i mydata.txt -f 1,2,3,4,5,6 -r -30.738 -s 6 -d descript.dat -c 1
+```
 
 ---
 
